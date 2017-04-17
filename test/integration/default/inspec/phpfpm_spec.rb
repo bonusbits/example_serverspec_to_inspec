@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe 'Php FPM' do
   it 'php-fpm installed' do
     expect(package('php70-fpm')).to be_installed

@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe 'Nginx' do
   it 'nginx installed' do
     expect(package('nginx')).to be_installed

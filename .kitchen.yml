@@ -29,4 +29,8 @@ suites:
   - name: default
     run_list:
       - recipe[example_serverspec_to_inspec::default]
+    verifier:
+      inspec_tests:
+        - name: inspec_tests
+          git: https://github.com/bonusbits/example_shared_inspec.git
     attributes:

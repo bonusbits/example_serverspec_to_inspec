@@ -1,0 +1,25 @@
+---
+driver:
+  name: docker
+  use_sudo: false
+  privileged: true
+  forward: 80
+  driver_config:
+    ssl_verify_mode: ":verify_none"
+
+provisioner:
+  name: chef_zero
+  always_update_cookbooks: true
+  require_chef_omnibus: 12.19.36
+
+platforms:
+  - name: amazon-docker
+    driver_config:
+      image: amazonlinux:latest
+      platform: rhel
+
+suites:
+  - name: default
+    run_list:
+      - recipe[example_serverspec_to_inspec::default]
+    attributes:

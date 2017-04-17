@@ -1,5 +1,5 @@
 # Example ServerSpec to InSpec Migration
-[![CircleCI](https://circleci.com/gh/bonusbits/example_serverspec_to_inspec.svg?style=shield)](https://circleci.com/gh/bonusbits/example_serverspec_to_inspec)
+[![CircleCI](https://circleci.com/gh/bonusbits/example_serverspec_to_inspec/tree/01_serverspec.svg?style=shield)](https://circleci.com/gh/bonusbits/example_serverspec_to_inspec/tree/01_serverspec)
 [![Join the chat at https://gitter.im/bonusbits/example_serverspec_to_inspec](https://badges.gitter.im/bonusbits/example_serverspec_to_inspec.svg)](https://gitter.im/bonusbits/example_serverspec_to_inspec?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 

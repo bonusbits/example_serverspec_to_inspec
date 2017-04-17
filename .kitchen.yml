@@ -1,0 +1,36 @@
+---
+verifier:
+  name: inspec
+  format: <%= ENV['CI'] ? 'junit' : 'cli' %>
+  <% if ENV['CI'] %>
+  output: "test-reports/%{platform}_%{suite}_inspec.xml"
+  <% end %>
+
+driver:
+  name: docker
+  use_sudo: false
+  privileged: true
+  forward: 80
+  driver_config:
+    ssl_verify_mode: ":verify_none"
+
+provisioner:
+  name: chef_zero
+  always_update_cookbooks: true
+  require_chef_omnibus: 12.19.36
+
+platforms:
+  - name: amazon-docker
+    driver_config:
+      image: amazonlinux:latest
+      platform: rhel
+
+suites:
+  - name: default
+    run_list:
+      - recipe[example_serverspec_to_inspec::default]
+    verifier:
+      inspec_tests:
+        - name: inspec_tests
+          git: https://github.com/bonusbits/example_shared_inspec.git
+    attributes:

@@ -4,7 +4,7 @@
 
 
 # Part 1/3
-[Branch 01_serverspec](https://github.com/bonusbits/example_serverspec_to_inspec)
+[Branch 01_serverspec](https://github.com/bonusbits/example_serverspec_to_inspec/tree/01_serverspec)
 
 # Purpose
 Demonstrate Creating a simple Chef Cookbook with a few ServerSpec Integration Tests using Docker as the testing driver with Test Kitchen.

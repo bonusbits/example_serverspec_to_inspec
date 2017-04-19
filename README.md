@@ -32,8 +32,8 @@ Next, we take the previously created Chef Cookbook from [01_serverspec](https://
 Finally, we create a new git repository and add the local InSpec tests to it from [02_inspec_local](https://github.com/bonusbits/example_serverspec_to_inspec/tree/02_inspec_local) and create a new 03_inspec_remote branch to demonstrate calling remote InSpec tests from out Chef Cookbook Test Kitchen configuration.
 
 * [Part 3 Git Branch](https://github.com/bonusbits/example_serverspec_to_inspec/tree/03_inspec_remote)
-* [Example Shared InSpec Git Repo](https://github.com/bonusbits/example_shared_inspec)
 * [Part 3 Walkthrough YouTube Video](https://www.youtube.com/playlist?list=PLy2eDDzDOIEpf6obkRNB_Eikx32b68f8I)
+* [Example Shared InSpec Git Repo](https://github.com/bonusbits/example_shared_inspec)
 * [Written Instructions](https://www.bonusbits.com/wiki/HowTo:Migrate_ServerSpec_Integration_Tests_to_InSpec_for_Chef_Cookbook)
 
 # Resources

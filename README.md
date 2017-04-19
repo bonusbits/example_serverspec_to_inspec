@@ -22,14 +22,14 @@ We'll be setting it up with kitchen-docker Test Kitchen driver.
 * [Written Instructions](https://www.bonusbits.com/wiki/HowTo:Migrate_ServerSpec_Integration_Tests_to_InSpec_for_Chef_Cookbook)
 
 # Part 2/3 - Convert ServerSpec to InSpec Local Tests
-Next, we take the previously created Chef Cookbook from [01_serverspec](https://github.com/bonusbits/example_serverspec_to_inspec/tree/01_serverspec) branch in our new 02_inspec_local branch and convert the ServerSpec tests to InSpec local tests.
+Next, we take the previously created Chef Cookbook from [Part 1 Git Branch](https://github.com/bonusbits/example_serverspec_to_inspec/tree/01_serverspec) branch in our new 02_inspec_local branch and convert the ServerSpec tests to InSpec local tests.
 
 * [Part 2 Git Branch](https://github.com/bonusbits/example_serverspec_to_inspec/tree/02_inspec_local)
 * [Part 2 Walkthrough YouTube Video](https://youtu.be/jLJu2fi2z4g)
 * [Written Instructions](https://www.bonusbits.com/wiki/HowTo:Migrate_ServerSpec_Integration_Tests_to_InSpec_for_Chef_Cookbook)
 
 # Part 3/3 - Convert Local InSpec Tests to Remote
-Finally, we create a new git repository and add the local InSpec tests to it from [02_inspec_local](https://github.com/bonusbits/example_serverspec_to_inspec/tree/02_inspec_local) and create a new 03_inspec_remote branch to demonstrate calling remote InSpec tests from out Chef Cookbook Test Kitchen configuration.
+Finally, we create a new git repository and add the local InSpec tests to it from [Part 2 Git Branch](https://github.com/bonusbits/example_serverspec_to_inspec/tree/02_inspec_local) and create a new 03_inspec_remote branch to demonstrate calling remote InSpec tests from out Chef Cookbook Test Kitchen configuration.
 
 * [Part 3 Git Branch](https://github.com/bonusbits/example_serverspec_to_inspec/tree/03_inspec_remote)
 * [Part 3 Walkthrough YouTube Video](https://www.youtube.com/playlist?list=PLy2eDDzDOIEpf6obkRNB_Eikx32b68f8I)

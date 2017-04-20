@@ -37,4 +37,4 @@ Finally, we create a new git repository and add the local InSpec tests to it fro
 * [Written Instructions](https://www.bonusbits.com/wiki/HowTo:Migrate_ServerSpec_Integration_Tests_to_InSpec_for_Chef_Cookbook)
 
 # Resources
-[Walkthrough YouTube Videos Playlist](https://www.youtube.com/playlist?list=PLy2eDDzDOIEpf6obkRNB_Eikx32b68f8I)
+* [YouTube Playlist](https://www.youtube.com/playlist?list=PLy2eDDzDOIEpf6obkRNB_Eikx32b68f8I)

@@ -5,7 +5,7 @@
 # Purpose
 The purpose of this project is to demonstrate the stages via git branches of doing a Chef Cookbook ServerSpec integration tests conversion to InSpec integration tests. 
 
-# Part 2/3 - Convert ServerSpec to InSpec Local Tests
+# Part 2 - Convert ServerSpec to InSpec Local Tests
 Next, we take the previously created Chef Cookbook from [01_serverspec](https://github.com/bonusbits/example_serverspec_to_inspec/tree/01_serverspec) branch in our new 02_inspec_local branch and convert the ServerSpec tests to InSpec local tests.
 
 [Part 2 Walkthrough Youtube](https://www.youtube.com/watch?v=E0q4nIZ5QXg&list=PLy2eDDzDOIEr9N2o6qeBj-7gGy0M3KQNA)

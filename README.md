@@ -5,7 +5,7 @@
 # Purpose
 The purpose of this project is to demonstrate the stages via git branches of doing a Chef Cookbook ServerSpec integration tests conversion to InSpec integration tests. 
 
-# Part 3/3 - Convert Local InSpec Tests to Remote
+# Part 3 - Convert Local InSpec Tests to Remote
 Finally, we create a new git repository and add the local InSpec tests to it from [02_inspec_local](https://github.com/bonusbits/example_serverspec_to_inspec/tree/02_inspec_local) and create a new 03_inspec_remote branch to demonstrate calling remote InSpec tests from out Chef Cookbook Test Kitchen configuration.
 
 [Part 3 Walkthrough Youtube](https://youtu.be/S0RvMnQpjXg)

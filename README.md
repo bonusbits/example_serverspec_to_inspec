@@ -5,7 +5,7 @@
 # Purpose
 The purpose of this project is to demonstrate the stages via branches of doing a Chef Cookbook ServerSpec integration tests conversion to InSpec integration tests. 
 
-# Part 1/3 - Creating a ServerSpec Tested Cookbook
+# Part 1 - Creating a ServerSpec Tested Cookbook
 The first step is to create and example Chef cookbook that uses ServerSpec integration testing. 
 We'll be setting it up with kitchen-docker Test Kitchen driver.
 

@@ -6,8 +6,13 @@
 The purpose of this project is to demonstrate the stages via git branches of doing a Chef Cookbook ServerSpec integration tests conversion to InSpec integration tests. 
 
 # Part 3 - Convert Local InSpec Tests to Remote
-Finally, we create a new git repository and add the local InSpec tests to it from [02_inspec_local](https://github.com/bonusbits/example_serverspec_to_inspec/tree/02_inspec_local) and create a new 03_inspec_remote branch to demonstrate calling remote InSpec tests from out Chef Cookbook Test Kitchen configuration.
+Finally, we create a new git repository as our Shared InSpec Profile and add the local InSpec tests to it from [Part 2](https://github.com/bonusbits/example_serverspec_to_inspec/tree/02_inspec_local) named a [example_shared_inspec](https://github.com/bonusbits/example_shared_inspec). Then we configure our example cookbook to use the remote InSpec Profile instead of local InSpec tests.
 
-[Part 3 Walkthrough Youtube](https://youtu.be/S0RvMnQpjXg)
+#### Links
+* [Written Instructions](https://www.bonusbits.com/wiki/HowTo:Migrate_ServerSpec_to_InSpec_-_Part_3)
+* [Walkthrough Video](https://youtu.be/S0RvMnQpjXg)<br>
+[![Part 3](images/part_3_vid_still.png)](https://youtu.be/S0RvMnQpjXg)
 
-[Written Instructions](https://www.bonusbits.com/wiki/HowTo:Migrate_ServerSpec_Integration_Tests_to_InSpec_for_Chef_Cookbook)
+## Other Links
+* [YouTube Playlist](https://www.youtube.com/playlist?list=PLy2eDDzDOIEpf6obkRNB_Eikx32b68f8I)
+* [Written Instructions Root Article](https://www.bonusbits.com/wiki/HowTo:Migrate_ServerSpec_Integration_Tests_to_InSpec_for_Chef_Cookbook)

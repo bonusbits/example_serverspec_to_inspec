@@ -15,7 +15,7 @@ The purpose of this project is to demonstrate migrating ServerSpec to InSpec aut
 | CircleCi                  | 2.0            |
 | Amazon Linux Docker Image | 2017.03        |
 
-## Part 1 - Create a ServerSpec Tested Cookbook
+# Part 1 - Create a ServerSpec Tested Cookbook
 The first step is to create and example Chef cookbook that uses ServerSpec integration testing. We'll be setting it up with kitchen-docker Test Kitchen driver.
 
 #### Links
@@ -33,7 +33,7 @@ Next, we take the previously created Chef Cookbook from [Part 1 Git Branch](http
 * [Walkthrough Video](https://youtu.be/jLJu2fi2z4g)<br>
 [![Part 1](images/part_2_vid_still.png)](https://youtu.be/jLJu2fi2z4g)
 
-## Part 3 - Convert Local InSpec Tests to Shared InSpec Profile
+# Part 3 - Convert Local InSpec Tests to Shared InSpec Profile
 Next, we create a new git repository for our new shared InSpec profile and add the local InSpec tests to it from [Part 2 Git Branch](https://github.com/bonusbits/example_serverspec_to_inspec/tree/02_inspec_local). Finally, we demonstrate calling our remote InSpec Profile suite of tests from out Chef Cookbook Test Kitchen configuration.
 
 #### Links

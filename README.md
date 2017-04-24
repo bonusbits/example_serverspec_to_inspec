@@ -12,3 +12,7 @@ The first step is to create and example Chef cookbook that uses ServerSpec integ
 * [Written Instructions](https://www.bonusbits.com/wiki/HowTo:Migrate_ServerSpec_to_InSpec_-_Part_1)
 * [Walkthrough Video](https://youtu.be/fn_GV9Ejnqc)<br>
 [![Part 1](images/part_1_vid_still.png)](https://youtu.be/fn_GV9Ejnqc)
+
+## Other Links
+* [YouTube Playlist](https://www.youtube.com/playlist?list=PLy2eDDzDOIEpf6obkRNB_Eikx32b68f8I)
+* [Written Instructions Root Article](https://www.bonusbits.com/wiki/HowTo:Migrate_ServerSpec_Integration_Tests_to_InSpec_for_Chef_Cookbook)

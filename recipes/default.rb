@@ -25,6 +25,7 @@ ruby_block 'Set PHP FPM Ownership' do
     Chef::Log.warn("Open3: Status (#{status})")
     raise "Open3: Status (#{err})" unless status.success?
   end
+  not_if { ::File.readlines('/etc/php-fpm-7.0.d/www.conf').grep(/^user = nginx/).any? }
 end
 
 # Enable and Start Service

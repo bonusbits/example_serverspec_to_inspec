@@ -1,4 +1,4 @@
-# Style tests. Rubocop and Foodcritic
+# Rubocop and Foodcritic
 namespace :style do
   require 'foodcritic'
   desc 'FoodCritic'
@@ -17,37 +17,14 @@ namespace :style do
   end
 end
 
-# Rspec and ChefSpec
-namespace :unit do
-  desc 'Unit Tests (Rspec & ChefSpec)'
-  require 'rspec/core/rake_task'
-  RSpec::Core::RakeTask.new(:rspec)
-
-  desc 'Unit Tests for CircleCI'
-  RSpec::Core::RakeTask.new(:circleci_rspec) do |test|
-    # t.fail_on_error = false
-    opts = '--no-drb -r rspec_junit_formatter --format RspecJunitFormatter -o test_reports/rspec/junit.xml'
-    test.rspec_opts = opts
-  end
-end
-
-# Integration Tests - Kitchen
-namespace :integration do
-  require 'kitchen'
-
-  # Load Specific Kitchen Configuration YAML
-  def load_kitchen_config(yaml)
-    Kitchen.logger = Kitchen.default_file_logger
-    kitchen_loader = Kitchen::Loader::YAML.new(local_config: yaml)
-    Kitchen::Config.new(loader: kitchen_loader, log_level: :info)
-  end
-
-  # Docker Test Suites
-  desc 'kitchen - docker - tests'
-  task :docker do
-    load_kitchen_config('.kitchen.yml').instances.each do |instance|
-      instance.test(:always)
-    end
+# Test Kitchen
+desc 'Kitchen'
+task :integration do
+  require 'kitchen/rake_tasks'
+  Kitchen.logger = Kitchen.default_file_logger
+  kitchen_loader = Kitchen::Loader::YAML.new(local_config: '.kitchen.yml')
+  Kitchen::Config.new(loader: kitchen_loader, log_level: :info).instances.each do |instance|
+    instance.test(:always)
   end
 end
 
@@ -59,4 +36,3 @@ task style_tasks: %w(style:chef style:ruby)
 
 desc 'Circle CI Tasks'
 task circleci: %w(style:chef style:ruby integration:docker)
-# task circleci: %w(style:chef style:ruby)

@@ -31,7 +31,7 @@ Next, we take the previously created Chef Cookbook from [Part 1 Git Branch](http
 * [Reference Git Branch](https://github.com/bonusbits/example_serverspec_to_inspec/tree/02_inspec_local)
 * [Written Instructions](https://www.bonusbits.com/wiki/HowTo:Migrate_ServerSpec_to_InSpec_-_Part_2)
 * [Walkthrough Video](https://youtu.be/jLJu2fi2z4g)<br>
-[![Part 1](images/part_2_vid_still.png)](https://youtu.be/jLJu2fi2z4g)
+[![Part 2](images/part_2_vid_still.png)](https://youtu.be/jLJu2fi2z4g)
 
 # Part 3 - Convert Local InSpec Tests to Shared InSpec Profile
 Next, we create a new git repository for our new shared InSpec profile and add the local InSpec tests to it from [Part 2 Git Branch](https://github.com/bonusbits/example_serverspec_to_inspec/tree/02_inspec_local). Finally, we demonstrate calling our remote InSpec Profile suite of tests from out Chef Cookbook Test Kitchen configuration.
@@ -41,7 +41,7 @@ Next, we create a new git repository for our new shared InSpec profile and add t
 * [Shared InSpec Profile Git Repo](https://github.com/bonusbits/example_shared_inspec)
 * [Written Instructions](https://www.bonusbits.com/wiki/HowTo:Migrate_ServerSpec_to_InSpec_-_Part_3)
 * [Walkthrough Video](https://youtu.be/S0RvMnQpjXg)<br>
-[![Part 1](images/part_3_vid_still.png)](https://youtu.be/S0RvMnQpjXg)
+[![Part 3](images/part_3_vid_still.png)](https://youtu.be/S0RvMnQpjXg)
 
 ## Other Links
 * [YouTube Playlist](https://www.youtube.com/playlist?list=PLy2eDDzDOIEpf6obkRNB_Eikx32b68f8I)
